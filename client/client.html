@@ -1,0 +1,12 @@
+<body>
+  {{> Persons}}
+</body>
+
+<template name="Persons">
+  <input placeholder="Search by job title">
+  <br>
+  <br>
+  {{#each persons}}
+    {{name}}<br>
+  {{/each}}
+</template>
